@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Technical Documentation</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main id="main-doc">
+    <nav id="navbar">
+      <header>
+        <h1>Machine Learning Documentation</h1>
+      </header>
+      <ul>
+        <li><a class="nav-link" href="#Linear_Models">Linear Models</a></li>
+        <li><a class="nav-link" href="#Dense_Layers">Dense Layers</a></li>
+        <li><a class="nav-link" href="#Convolutional_Neural_Networks">Convolutional Neural Networks</a></li>
+        <li><a class="nav-link" href="#Recurrent_Neural_Networks">Recurrent Neural Networks</a></li>
+        <li><a class="nav-link" href="#Regularization_Techniques">Regularization Techniques</a></li>
+      </ul>
+    </nav>
+    <section id="Linear_Models" class="main-section">
+      <header>
+        <h1>Linear Models</h1>
+      </header>
+          <p>Linear models are a class of models that assume a linear relationship between input variables and the target variable. They are simple and effective for many tasks, including regression and classification.</p>   
+          <code>
+            from sklearn.linear_model import LinearRegression<br>
+            model = LinearRegression()<br>
+            model.fit(X_train, y_train)<br>
+            predictions = model.predict(X_test)
+          </code>
+          <p>Example of Linear Regression in Python:</p>
+          <ul>
+            <li>Linear Regression</li>
+            <li>Logistic Regression</li>
+          </ul>
+    </section>
+    <section id="Dense_Layers" class="main-section">
+      <header>
+        <h1>Dense Layers</h1>
+      </header>
+          <p>Dense layers are fully connected layers in a neural network where each neuron is connected to every neuron in the previous layer. They are crucial in constructing complex networks capable of learning various patterns.</p>
+          <ul>
+            <li>Feedforward Networks</li>
+            <li>Multi-Layer Perceptrons (MLPs)</li>
+          </ul>
+          <p>Example of a Dense Layer in TensorFlow:</p>   
+          <code>
+            from tensorflow.keras.layers import Dense<br>
+            model.add(Dense(64, activation='relu', input_shape=(input_dim,)))<br>
+            model.add(Dense(10, activation='softmax'))
+          </code>
+    </section>
+    <section id="Convolutional_Neural_Networks" class="main-section">
+      <header>
+        <h1>Convolutional Neural Networks</h1>
+      </header>
+          <p>Convolutional Neural Networks (CNNs) are designed to process data with a grid-like topology, such as images. They use convolutional layers to detect features in the input data.</p>
+          <ul>
+            <li>Image Classification</li>
+            <li>Object Detection</li>
+          </ul>
+          <p>Example of a Convolutional Layer in TensorFlow</p>   
+          <code>
+            from tensorflow.keras.layers import Conv2D<br>
+            model.add(Conv2D(32, (3, 3), activation='relu', input_shape=(img_height, img_width, 3)))<br>
+            model.add(MaxPooling2D((2, 2)))
+          </code>
+    </section>
+    <section id="Recurrent_Neural_Networks" class="main-section">
+      <header>
+        <h1>Recurrent Neural Networks</h1>
+      </header>
+          <p>Recurrent Neural Networks (RNNs) are suited for sequence data. They use feedback connections to process sequences of inputs, making them ideal for tasks such as time-series analysis and natural language processing.</p>
+          <ul>
+            <li>Long Short-Term Memory (LSTM)</li>
+            <li>Gated Recurrent Units (GRUs)</li>
+          </ul>
+          <p>Example of an LSTM Layer in TensorFlow:</p>   
+          <code>
+            from tensorflow.keras.layers import LSTM<br>
+            model.add(LSTM(50, return_sequences=True, input_shape=(timesteps, features)))<br>
+            model.add(LSTM(50))
+          </code>
+    </section>
+    <section id="Regularization_Techniques" class="main-section">
+      <header>
+        <h1>Regularization Techniques</h1>
+      </header> 
+          <p>Regularization techniques are used to prevent overfitting by adding a penalty to the loss function. Common techniques include L1 and L2 regularization, dropout, and early stopping.</p>
+          <ul>
+            <li>L1 Regularization</li>
+            <li>Dropout</li>
+          </ul>
+          <p>Example of Dropout in TensorFlow:</p>   
+          <code>
+            from tensorflow.keras.layers import Dropout<br>
+            model.add(Dropout(0.5))<br>
+            model.add(Dense(64, activation='relu'))
+          </code>
+    </section>
+  </main>
+</body>
+</html>
