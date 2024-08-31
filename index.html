@@ -25,28 +25,28 @@
         <h1>Linear Models</h1>
       </header>
           <p>Linear models are a class of models that assume a linear relationship between input variables and the target variable. They are simple and effective for many tasks, including regression and classification.</p>   
+          <p>Example of Linear Regression in Python:</p>
+          <ul>
+            <li>Linear Regression</li>
+            <li>Logistic Regression</li>
+          </ul>
           <code>
             from sklearn.linear_model import LinearRegression<br>
             model = LinearRegression()<br>
             model.fit(X_train, y_train)<br>
             predictions = model.predict(X_test)
           </code>
-          <p>Example of Linear Regression in Python:</p>
-          <ul>
-            <li>Linear Regression</li>
-            <li>Logistic Regression</li>
-          </ul>
     </section>
     <section id="Dense_Layers" class="main-section">
       <header>
         <h1>Dense Layers</h1>
       </header>
           <p>Dense layers are fully connected layers in a neural network where each neuron is connected to every neuron in the previous layer. They are crucial in constructing complex networks capable of learning various patterns.</p>
+          <p>Example of a Dense Layer in TensorFlow:</p>  
           <ul>
             <li>Feedforward Networks</li>
             <li>Multi-Layer Perceptrons (MLPs)</li>
-          </ul>
-          <p>Example of a Dense Layer in TensorFlow:</p>   
+          </ul> 
           <code>
             from tensorflow.keras.layers import Dense<br>
             model.add(Dense(64, activation='relu', input_shape=(input_dim,)))<br>
@@ -58,11 +58,11 @@
         <h1>Convolutional Neural Networks</h1>
       </header>
           <p>Convolutional Neural Networks (CNNs) are designed to process data with a grid-like topology, such as images. They use convolutional layers to detect features in the input data.</p>
+          <p>Example of a Convolutional Layer in TensorFlow</p>
           <ul>
             <li>Image Classification</li>
             <li>Object Detection</li>
-          </ul>
-          <p>Example of a Convolutional Layer in TensorFlow</p>   
+          </ul>   
           <code>
             from tensorflow.keras.layers import Conv2D<br>
             model.add(Conv2D(32, (3, 3), activation='relu', input_shape=(img_height, img_width, 3)))<br>
@@ -74,11 +74,11 @@
         <h1>Recurrent Neural Networks</h1>
       </header>
           <p>Recurrent Neural Networks (RNNs) are suited for sequence data. They use feedback connections to process sequences of inputs, making them ideal for tasks such as time-series analysis and natural language processing.</p>
+          <p>Example of an LSTM Layer in TensorFlow:</p>
           <ul>
             <li>Long Short-Term Memory (LSTM)</li>
             <li>Gated Recurrent Units (GRUs)</li>
-          </ul>
-          <p>Example of an LSTM Layer in TensorFlow:</p>   
+          </ul>   
           <code>
             from tensorflow.keras.layers import LSTM<br>
             model.add(LSTM(50, return_sequences=True, input_shape=(timesteps, features)))<br>
@@ -90,11 +90,11 @@
         <h1>Regularization Techniques</h1>
       </header> 
           <p>Regularization techniques are used to prevent overfitting by adding a penalty to the loss function. Common techniques include L1 and L2 regularization, dropout, and early stopping.</p>
+          <p>Example of Dropout in TensorFlow:</p>
           <ul>
             <li>L1 Regularization</li>
             <li>Dropout</li>
-          </ul>
-          <p>Example of Dropout in TensorFlow:</p>   
+          </ul>   
           <code>
             from tensorflow.keras.layers import Dropout<br>
             model.add(Dropout(0.5))<br>
