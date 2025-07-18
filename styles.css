@@ -257,7 +257,7 @@ code {
   }
 
   nav {
-    transform: translateX(calc(15px + 2.5em - 350px));
+    transform: translateX(calc(20px + 2.5em - 350px));
     width: var(--sidebar-width-1);
     padding: 5em 1em;
     padding-bottom: 0;
@@ -299,7 +299,7 @@ code {
 
 
   main {
-    margin-left: calc(15px + 2.5em);
+    margin-left: calc(20px + 2.5em);
   }
 
 
