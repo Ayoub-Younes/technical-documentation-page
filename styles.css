@@ -260,6 +260,7 @@ code {
     transform: translateX(calc(15px + 2.5em - 350px));
     width: var(--sidebar-width-1);
     padding: 5em 1em;
+    padding-bottom: 0;
     transition: all 0.3s ease;
   }
 
