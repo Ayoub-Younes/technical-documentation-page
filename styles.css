@@ -21,7 +21,7 @@ body {
   font-family: Arial, sans-serif;
   font-size: 1em;
   display: flex;
-  min-height: 100vh;
+  height: 100%;
 }
 
 
@@ -253,11 +253,11 @@ code {
 @media (max-width: 768px) {
 
   body {
-    font-size: 1em;
+    font-size: 0.9em;
   }
 
   nav {
-    transform: translateX(calc(25px + 2.5em - 350px));
+    transform: translateX(calc(15px + 2.5em - 350px));
     width: var(--sidebar-width-1);
     padding: 5em 1em;
     transition: all 0.3s ease;
@@ -267,6 +267,7 @@ code {
     transform: translateX(0);  
   }
 
+  
   .side-bar {
     opacity: 0;
     transition: all 0.3s ease;
@@ -274,10 +275,6 @@ code {
 
   .side-bar.active {
     opacity: 1;
-  }
-
-  main {
-    margin-left: calc(25px + 2.5em);
   }
 
   nav h2 {
@@ -288,5 +285,22 @@ code {
   .burger {
     display: block;  
   }
+
+  main section {
+  gap: 10px;
+  padding: 3em 1em;
+  margin-bottom: 30px;
+  }
+
+  main h2 {
+    padding-bottom: 0;
+  }   
+
+
+  main {
+    margin-left: calc(15px + 2.5em);
+  }
+
+
 
 }
